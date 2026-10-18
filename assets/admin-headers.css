@@ -1,0 +1,73 @@
+/* Shared administration page banner. Keep the toolbar and banner adjoining. */
+#admin-main {
+  --admin-gutter: 1.25rem;
+}
+
+#admin-main:has(header[class*="from-emerald-50"]) {
+  padding-top: 0;
+}
+
+/* Page wrappers must not reintroduce a gap above their first banner. */
+#admin-main :is(div, section):has(> header:first-child[class*="from-emerald-50"]),
+#admin-main :is(div, section):has(> div:first-child > header:first-child[class*="from-emerald-50"]) {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#admin-main header[class*="from-emerald-50"] {
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  flex-shrink: 0;
+  width: calc(100% + var(--admin-gutter) * 2);
+  max-width: none;
+  min-height: 88px;
+  margin: 0 calc(-1 * var(--admin-gutter)) 20px;
+  padding: 16px var(--admin-gutter);
+  border: 0;
+  border-bottom: 1px solid #bcebdc;
+  border-radius: 0;
+  box-shadow: none;
+  background: linear-gradient(115deg, #ecfdf5 0%, #f4fcf9 52%, #ccf6e8 100%);
+  color: #10234f;
+}
+
+#admin-main header[class*="from-emerald-50"] h1 {
+  margin-top: 0;
+  color: #10234f;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+#admin-main header[class*="from-emerald-50"] > p {
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: #647895;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+header[aria-label="Administration toolbar"] {
+  border-bottom-color: #d9e9e3;
+  background: #fff;
+}
+
+@media (min-width: 640px) {
+  #admin-main { --admin-gutter: 2rem; }
+}
+
+@media (min-width: 1024px) {
+  #admin-main { --admin-gutter: 2.5rem; }
+}
+
+@media (max-width: 639px) {
+  #admin-main header[class*="from-emerald-50"] {
+    gap: 12px;
+    min-height: 80px;
+  }
+  #admin-main header[class*="from-emerald-50"] h1 {
+    font-size: 1.5rem;
+  }
+}
