@@ -133,18 +133,7 @@ import{c as Oe,r as L,j as t,u as re,X as Pe,N as Dt,a as lt,U as Lt,d as Xe,H a
         md:px-6 md:pb-12\r
         lg:min-h-[480px]\r
         lg:px-8 lg:pb-14 lg:pt-5\r
-    `,children:[t.jsx("div",{className:"flex justify-center mb-8",children:t.jsxs("div",{className:`\r
-            inline-flex\r
-            items-center\r
-            gap-3\r
-            rounded-full\r
-            border\r
-            border-[#D9D9D9]\r
-            bg-white\r
-            px-5\r
-            py-2\r
-            shadow-[0_4px_14px_rgba(0,0,0,0.12)]\r
-        `,children:[t.jsx(de,{src:rn,alt:e("publicUi.openTime"),className:"w-10 h-10"}),t.jsxs("p",{className:"text-[18px] font-medium text-[#4A4A4A]",children:[e("featureCards.openDaily")," ",t.jsx("span",{className:"font-bold text-[#08772F]",children:e("featureCards.openTime")})]})]})}),t.jsxs("div",{className:`\r
+    `,children:[t.jsxs("div",{className:`\r
                             grid grid-cols-1\r
                             lg:grid-cols-2\r
                             lg:items-center\r

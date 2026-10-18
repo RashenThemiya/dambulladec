@@ -1,0 +1,1 @@
+import{a as e}from"./ShopPageParts-D-AMckV_.js";const t=e+" text-base! border-slate-300!",r="min-h-11 min-w-0 w-full rounded-xl border border-slate-300 bg-white px-3 text-base outline-none focus:ring-2 focus:ring-emerald-700";export{t as b,r as f};
